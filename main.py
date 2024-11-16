@@ -6,7 +6,7 @@ from gemini_model_integration import load_gemini_model, change_role_in_streamlit
 
 
 st.set_page_config(
-    page_title='4 in 1 AI Toolkit',
+    page_title='ChatBot',
     page_icon='🧠',
     layout='centered'
 )
@@ -14,7 +14,7 @@ st.set_page_config(
 
 with st.sidebar:
 
-    title_and_pages = option_menu('4 in 1 AI Toolkit', 
+    title_and_pages = option_menu('Tools', 
                                 options=['Chatbot', 
                                          'Image Caption Generator', 
                                          'Embed Text', 
@@ -46,7 +46,7 @@ if title_and_pages == 'Chatbot':
             st.markdown(message.parts[0].text)
 
     
-    user_prompt_input = st.chat_input('Ask Gemini Pro...')
+    user_prompt_input = st.chat_input('Ask a Question...')
 
     if user_prompt_input:
 
