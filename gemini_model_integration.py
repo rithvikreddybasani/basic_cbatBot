@@ -3,10 +3,10 @@ import os
 import google.generativeai as genai
 
 
-load_dotenv()
 
 
-google_gemini_api_key = os.getenv('GOOGLE_GEMINI_API_KEY')
+
+google_gemini_api_key = "AIzaSyD_5oPOrWDWIuseBgeFZbVYDt8Aj7jGn_U"
 
 
 genai.configure(api_key=google_gemini_api_key)
